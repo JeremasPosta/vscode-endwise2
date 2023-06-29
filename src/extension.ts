@@ -122,7 +122,7 @@ async function endwiseEnter(calledWithModifier = false) {
     await editor.edit((textEditor) => {
       textEditor.insert(
         new vscode.Position(lineNumber, lineLength),
-        `\n${indentationFor(lineText)}end`
+        `\n${indentationFor(lineText)}end\n`
       );
     });
 
